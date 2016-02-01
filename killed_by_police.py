@@ -261,6 +261,9 @@ binned_ages = np.histogram(known_age, bins=np.linspace(1, max_bin, num=num_bins)
 
 total_killed = len(age)
 
+known_race_count = [x for x in race_count if x[0] != 'Unknown']
+total_known_race = sum([x[1] for x in known_race_count])
+
 # Print the data nicely
 print("In total there were {} people killed".format(total_killed))
 print("The oldest person to be killed was {}".format(max_age))
@@ -276,6 +279,11 @@ print("\nThe races killed were:")
 print("Race        |Number| Percent")
 for _race, _nums in race_count:
     print("{:12s}:{:5d} :  {:.2%}".format(_race, _nums, _nums/total_killed))
+
+print("\nThe known races killed were:")
+print("Race        |Number| Percent")
+for _race, _nums in known_race_count:
+    print("{:12s}:{:5d} :  {:.2%}".format(_race, _nums, _nums/total_known_race))
 
 print("\nHow the people were killed:")
 print("How         |Number| Percent")

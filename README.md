@@ -9,8 +9,10 @@ The data on http://killedbypolice.net is in a table but it is not 100% consisten
 
 The data on http://killedbypolice.net may not contain all deaths. It also does not contain information on the race of 436 people (14.09%) was unknown, this is a significant amount. http://killedbypolice.net does not contain all causes of deaths, ages or genders however they were not as significant.
 
-#### Infographics
-The infographics can be found on the project page https://acelewis.com/project/killedbypolice
+![Main infographic](/killed-by-police.png)
+
+#### Other Infographics
+All the infographics can be found on the project page https://acelewis.com/project/killedbypolice
 
 #### Licenses
 The code is licensed under GPL, the images are licensed under [Creative Commons Attribution-ShareAlike (CC BY-SA 3.0)](https://creativecommons.org/licenses/by-sa/3.0/)
